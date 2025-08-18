@@ -8,16 +8,52 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
-    <div class="h-screen">
-        <div class="dark:bg-black dark:text-white">
-            <ul class=" [&>*]:p-5 flex">
-                <li><a href="">About</a></li>
-                <li><a href="">Skill</a></li>
-                <li><a href="">Project</a></li>
-                <li><a href="">Contact</a></li>
+<body class=" bg-stone-300 dark:bg-zinc-800 dark:text-white">
+    <div>
+        <!-- Navbar -->
+        <div
+            class="  border-b-1 border-l-1 bg-stone-500  border-black dark:border dark:bg-gray-900 dark:text-white">
+            <ul class="flex items-center justify-between p-5">
+                <li><a href="#" class="text-3xl pr-5 font-extrabold">&lt;NK/></a></li>
+                <div class="flex">
+                    <li><a href="#About" class="p-2  rounded-2xl  hover:outline-1 ">About</a></li>
+                    <li><a href="#" class="  rounded-2xl  hover:outline-1 ">Skill</a></li>
+                    <li><a href="#" class="p-2 rounded-2xl  hover:outline-1 ">Project</a></li>
+                    <li><a href="#" class="p-2  rounded-2xl  hover:outline-1 ">Contact</a></li>
+                </div>
             </ul>
         </div>
+
+        <!-- Intro -->
+        <div class="px-4 2xl:px-0     dark:bg-zinc-800 dark:text-white">
+
+            <div class="lg:flex sm:flex lg:flex-row sm:flex-col   items-center  justify-around  ">
+                <!-- Image -->
+                <div class="mt-38">
+                    <img class="lg:size-90 rounded-4xl md:size-80 sm:size-60 " src="./assets/images/nikhil.png" alt=""
+                        srcset="">
+                </div>
+                <!-- Text -->
+                <div class="mt-38">
+                    <a class="text-4xl">
+                        Hello I'am Nikhil Keshvala
+                    </a>
+                    <br>
+                    <br>
+                    <p class="text-1xl">
+                        I’m a passionate Frontend & Mobile App Developer with experience in building responsive
+                        <br> websites using HTML, CSS, JavaScript, and Tailwind CSS, and cross-platform apps with React
+                        Native. <br>
+                        Currently, I’m focused on improving my skills in modern frameworks and <br> building real-world
+                        projects to grow as a developer.
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div id="About">
+        </div>
+
     </div>
 </body>
+
 </html>
