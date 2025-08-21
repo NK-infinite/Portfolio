@@ -6,34 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikhil Keshvala</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    });
+</script>
 
 <body class=" bg-stone-300 dark:bg-zinc-800 dark:text-white">
     <div>
         <!-- Navbar -->
         <div
-            class="  border-b-1 border-l-1 bg-stone-500  border-black dark:border dark:bg-gray-900 dark:text-white">
+            class=" group border-b-1 border-l-1 bg-stone-500  border-black dark:border    dark:bg-gray-900 dark:text-white">
+
             <ul class="flex items-center justify-between p-5">
-                <li><a href="#" class="text-3xl pr-5 font-extrabold">&lt;NK/></a></li>
-                <div class="flex">
-                    <li><a href="#About" class="p-2  rounded-2xl  hover:outline-1 ">About</a></li>
-                    <li><a href="#" class="  rounded-2xl  hover:outline-1 ">Skill</a></li>
-                    <li><a href="#" class="p-2 rounded-2xl  hover:outline-1 ">Project</a></li>
-                    <li><a href="#" class="p-2  rounded-2xl  hover:outline-1 ">Contact</a></li>
+                <a href="#" class="text-3xl pr-5 font-extrabold">&lt;NK/></a>
+
+                <div class="hidden  lg:block, lg:flex" id="Navbar">
+                    <li><a href="#About" class="p-2 px-6 mx-2 rounded-2xl  hover:outline-1 ">About</a></li>
+                    <li><a href="#Skill" class="p-2 px-6 mx-2  rounded-2xl  hover:outline-1 ">Skill</a></li>
+                    <li><a href="#Project" class="p-2 px-6 mx-2 rounded-2xl  hover:outline-1 ">Project</a></li>
+                    <li><a href="#Contact" class="p-2 px-6 mx-2  rounded-2xl  hover:outline-1 ">Contact</a></li>
                 </div>
+
+
+                <!-- bar button -->
+                <button class="block lg:hidden text-2xl" id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </ul>
         </div>
 
-        <!-- Intro -->
-        <div class="px-4 2xl:px-0     dark:bg-zinc-800 dark:text-white">
 
-            <div class="lg:flex sm:flex lg:flex-row sm:flex-col   items-center  justify-around  ">
+        <ul id="mobile-menu" class="hidden lg:hidden  flex-col space-y-4 p-5 bg-stone-400 dark:bg-gray-800 ">
+            <li><a href="#About" class="block p-2 rounded hover:bg-stone-300 dark:hover:bg-gray-700">About</a></li>
+            <li><a href="#Skill" class="block p-2 rounded hover:bg-stone-300 dark:hover:bg-gray-700">Skill</a></li>
+            <li><a href="#Project" class="block p-2 rounded hover:bg-stone-300 dark:hover:bg-gray-700">Project</a></li>
+            <li><a href="#Contact" class="block p-2 rounded hover:bg-stone-300 dark:hover:bg-gray-700">Contact</a></li>
+        </ul>
+
+
+        <!-- Intro -->
+        <div class="px-6 2xl:px-0 dark:bg-zinc-800 dark:text-white">
+
+            <div class="lg:flex sm:flex lg:flex-row sm:flex-col mb-35  gap-10 items-center  justify-center  ">
                 <!-- Image -->
                 <div class="mt-38">
                     <img class="lg:size-90 rounded-4xl md:size-80 sm:size-60 " src="./assets/images/nikhil.png" alt=""
                         srcset="">
                 </div>
-                <!-- Text -->
+                <!-- Info -->
                 <div class="mt-38">
                     <a class="text-4xl">
                         Hello I'am Nikhil Keshvala
@@ -42,18 +72,209 @@
                     <br>
                     <p class="text-1xl">
                         I’m a passionate Frontend & Mobile App Developer with experience in building responsive
-                        <br> websites using HTML, CSS, JavaScript, and Tailwind CSS, and cross-platform apps with React
-                        Native. <br>
-                        Currently, I’m focused on improving my skills in modern frameworks and <br> building real-world
-                        projects to grow as a developer.
+                        websites
+                    <p>
+
+                        Using HTML, CSS, JavaScript, and Tailwind CSS, and cross-platform apps with React
+                        Native.
+                    </p>
+                    Currently, I’m focused on improving my skills in modern frameworks and building real-world
+                    projects to grow as a developer.
                 </div>
+                </ul>
             </div>
         </div>
+
         <!-- About -->
-        <div id="About">
+        <div id="About" class="py-16 px-6 bg-stone-200 dark:bg-gray-700 dark:text-white">
+
+            <div class="flex justify-center">
+                <div class="bg-stone-500 dark:bg-gray-600  p-2 px-6 text-white rounded-2xl mb-10">
+                    About
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto lg:flex lg:justify-between lg:items-start gap-15">
+                <!--  (Who Am I / Internship) -->
+                <div class=" mb-20 lg:mb-0">
+                    <h2 class="text-4xl font-bold mb-6">Who Am I ?</h2>
+                    <p class="text-lg leading-relaxed">
+                        I'm <a class="text-purple-600">Nikhil Keshvala</a>,
+                        Currently Doing an
+                        <a class="font-semibold">
+                            Internship
+                        </a>
+
+                        at
+                        <a href="https://www.enthusiasoftech.com/" target="_blank"
+                            class="text-blue-500 hover:underline">
+                            Enthusia software pvt ltd
+                        </a>
+                    </p>
+                    <p class=" mt-7 lg:mt-5  text-lg leading-relaxed">
+                        I’m Passionate About
+                        <a href="https://reactnative.dev/" class="text-blue-500 hover:underline">
+
+                            React Native
+                        </a>
+                        ,
+                        And Frontend Development
+                    </p>
+                    <p class="mt-7 lg:mt-5  text-lg leading-relaxed">Specialize in Building Mobile Apps and Web Apps
+                        Using React Native
+                    </p>
+
+                    <p class="mt-7 lg:mt-5  text-lg leading-relaxed">
+                        I Focus Not only on Writing Clean And Efficient Code But Also on Delivering Smooth User
+                        Experiences.
+                    </p>
+                    <p class="mt-7 lg:mt-5  text-lg leading-relaxed">
+                        For me, Development is Not just About Coding — it’s About Solving Problems,
+                        Improving Usability, And Creating Digital Products That People Actually Enjoy Using.
+                    </p>
+                </div>
+
+                <!--  (Quick Info / Education) -->
+                <div class="lg:w-1/2">
+                    <h3 class="text-3xl font-bold mb-6">Education Info</h3>
+                    <p class="text-lg ">
+                        Bachelor of Science in Information Technology (BSc IT)</a>
+                    </p>
+
+                    <p class="text-lg mb-4 text-gray-600 dark:text-gray-300">
+                        2024 - Present at
+                        <a href="https://sarvajanikuniversity.ac.in/#gsc.tab=0" target="_blank"
+                            class="text-blue-500 hover:underline">
+                            Sarvajanik University
+                        </a>
+                        In College:
+                        <a href="https://www.srki.ac.in/" target="_blank" class="text-blue-500 hover:underline">
+                            Shree Ramkrishna Institute of Computer Education and Applied Sciences
+                        </a>
+                    </p>
+                    <br>
+                    <p class="text-lg mb-4">
+                        <a class="">Higher Secondary (12th - Science Stream)</a><br>
+                        <a class="text-gray-600 dark:text-gray-300">2022 - 2024</a><br>
+                        Gujarat Secondary and Higher Secondary Education Board (GSHSEB)
+                    </p>
+                    <br>
+                    <p class="text-lg mb-4">
+                        <a class="">Secondary School (10th)</a><br>
+                        <a class="text-gray-600 dark:text-gray-300">2020</a><br>
+                        Gujarat Secondary and Higher Secondary Education Board (GSHSEB)
+                    </p>
+                </div>
+
+            </div>
         </div>
 
+
+        <!-- Skill -->
+        <div id="Skill" class="px-20 py-10 bg-stone-300 dark:bg-zinc-800 dark:text-white  ">
+
+            <div class="flex justify-center">
+                <div class="bg-stone-500 dark:bg-gray-600  p-2 px-6 text-white rounded-2xl mb-10">Skill</div>
+            </div>
+
+            <div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-x-40 gap-y-10 place-items-center">
+                    <div class="w-35 hover:scale-125 duration-1000 ">
+                        <a href="https://html.com/">
+                            <img src="./assets/images/html.png" alt="" srcset="">
+                        </a>
+                        <a class="flex justify-center">HTML</a>
+                    </div>
+
+
+                    <div class="w-30  hover:scale-125 duration-1000">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img src="./assets/images/JS.png" alt="" srcset="">
+                        </a>
+                        <a class="flex justify-center">JavaScript</a>
+                    </div>
+
+
+                    <div class="w-45 hover:scale-125 duration-1000">
+                        <a href="https://reactnative.dev/docs/getting-started">
+                            <img src="./assets/images/reactnative.png" alt="" srcset="">
+                        </a>
+                        <a class="flex justify-center">React Native</a>
+                    </div>
+
+                    <div class="w-35 mb- hover:scale-125 duration-1000 ">
+                        <a href="https://git-scm.com/">
+                            <img src="./assets/images/git.png" alt="" srcset="">
+                        </a>
+                        <a class="flex justify-center">Git</a>
+                    </div>
+
+                    <div class="w-35 mb- hover:scale-125 duration-1000 ">
+                        <a href="https://tailwindcss.com/docs/installation/using-vite">
+                            <img src="./assets/images/tailwind.png" alt="" srcset="">
+                        </a>
+                        <a class="flex justify-center">Tailwind</a>
+                    </div>
+
+
+
+
+                    <div class="w-30  hover:scale-125 duration-1000">
+                        <a href="https://firebase.google.com/docs?gclsrc=aw.ds&gad_source=1&gad_campaignid=20100026058&
+                        gbraid=0AAAAADpUDOhpEDlqrYGt0R0pF7wl_M79p&gclid=Cj0KCQjw5JXFBhCrARIsAL1ckPtf0V2iMbzYs0ShAUE59tjgL8
+                        _1797tmhXkbQ0BdgaNCf0FAn4PteAaAi2GEALw_wcB">
+                            <img src="./assets/images/firebase.png" alt="" srcset="">
+                        </a>
+                        <a class="flex justify-center">firebase</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project -->
+        <div id="Project" class="px-20 h-200 py-10 bg-stone-200 dark:bg-gray-700 dark:text-white">
+            <div class="flex justify-center">
+                <div class="bg-stone-500 dark:bg-gray-600  p-2 px-6 text-white rounded-2xl mb-10">Project</div>
+            </div>
+
+            <div>   
+
+                <div class="grid  sm:grid-cols-3 md:grid-cols-3  gap-y-10  place-items-center">
+                   
+                    <div class=" bg-stone-500  dark:bg-gray-600 text-white rounded-2xl">
+                        <div class="columns-2">
+                            <img src="./assets/project_image/Untitled design3.png" class="rounded-tl-2xl" alt="">
+                            <img src="./assets/project_image/Untitled design5.png" class="rounded-bl-2xl" alt="">
+                            <img src="./assets/project_image/Untitled design4.png" class="rounded-tr-2xl" alt="">
+                        </div>
+                    </div>
+
+                      <div class=" bg-stone-500 dark:bg-gray-600 text-white rounded-2xl">
+                        <div class="columns-2">
+                            <img src="./assets/project_image/Untitled design3.png" class="rounded-tl-2xl" alt="">
+                            <img src="./assets/project_image/Untitled design5.png" class="rounded-bl-2xl" alt="">
+                            <img src="./assets/project_image/Untitled design4.png" class="rounded-tr-2xl" alt="">
+                        </div>
+                        </div>
+
+                     <div class=" bg-stone-500  dark:bg-gray-600 text-white rounded-2xl">
+                      <div class="columns-2">
+                          <img src="./assets/project_image/Untitled design3.png" class="rounded-tl-2xl" alt="">
+                          <img src="./assets/project_image/Untitled design5.png" class="rounded-bl-2xl" alt="">
+                          <img src="./assets/project_image/Untitled design4.png" class="rounded-tr-2xl" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>  
     </div>
+
 </body>
 
 </html>
