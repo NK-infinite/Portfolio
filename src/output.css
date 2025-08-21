@@ -708,6 +708,14 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
   .duration-1000 {
     --tw-duration: 1000ms;
     transition-duration: 1000ms;
@@ -722,12 +730,32 @@
       }
     }
   }
+  .hover\:scale-120 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 120%;
+        --tw-scale-y: 120%;
+        --tw-scale-z: 120%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:scale-125 {
     &:hover {
       @media (hover: hover) {
         --tw-scale-x: 125%;
         --tw-scale-y: 125%;
         --tw-scale-z: 125%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-150 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 150%;
+        --tw-scale-y: 150%;
+        --tw-scale-z: 150%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
@@ -976,6 +1004,11 @@
   .lg\:gap-40 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:p-10 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 10);
     }
   }
   .lg\:p-30 {
