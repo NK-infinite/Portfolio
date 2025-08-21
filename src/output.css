@@ -249,11 +249,20 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
   }
+  .mt-17 {
+    margin-top: calc(var(--spacing) * 17);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
   }
   .mt-38 {
     margin-top: calc(var(--spacing) * 38);
@@ -532,6 +541,9 @@
   }
   .rounded-bl-2xl {
     border-bottom-left-radius: var(--radius-2xl);
+  }
+  .rounded-bl-full {
+    border-bottom-left-radius: calc(infinity * 1px);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -827,6 +839,11 @@
       }
     }
   }
+  .sm\:mt-10 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
@@ -984,6 +1001,11 @@
   .lg\:mt-5 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:mt-38 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 38);
     }
   }
   .lg\:mb-0 {
