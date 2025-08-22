@@ -22,7 +22,7 @@
 </script>
 
 <body class=" bg-stone-300 dark:bg-zinc-800 dark:text-white">
-    <div>
+    <div class="group">
         <!-- Navbar -->
         <div
             class=" group border-b-1 border-l-1 bg-stone-500  border-black dark:border    dark:bg-gray-900 dark:text-white">
@@ -31,14 +31,23 @@
                 <a href="" class="text-3xl pr-5 font-extrabold">&lt;NK/></a>
 
                 <div class="hidden  lg:block, lg:flex" id="Navbar">
-                    <li><a href="./assets/resume/Nikhil.pdf" class="flex p-2 px-6 mx-2 rounded-2xl  text-blue-700 hover:shadow-xl dark:shadow-orange-500 shadow-orange-50">
+                    <li><a href="./assets/resume/Nikhil.pdf"
+                            class="flex p-2 px-6 mx-2 rounded-2xl  text-blue-700 hover:shadow-xl duration-500 dark:shadow-orange-500 shadow-orange-50">
                             Resume
                             <img src="./assets/images/download.png" class="size-6" alt="" srcset="">
                         </a></li>
-                    <li><a href="#About" class="p-2 px-6 mx-2 rounded-2xl  hover:outline-1 hover:shadow-xl dark:shadow-orange-500 shadow-orange-50">About</a></li>
-                    <li><a href="#Skill" class="p-2 px-6 mx-2  rounded-2xl  hover:outline-1 hover:shadow-xl dark:shadow-orange-500 shadow-amber-50">Skill</a></li>
-                    <li><a href="#Project" class="p-2 px-6 mx-2 rounded-2xl  hover:outline-1 hover:shadow-xl dark:shadow-orange-500 shadow-orange-50">Project</a></li>
-                    <li><a href="#Contact" class="p-2 px-6 mx-2  rounded-2xl  hover:outline-1 hover:shadow-xl dark:shadow-orange-500 shadow-orange-50">Contact</a></li>
+                    <li><a href="#About"
+                            class="p-2 px-6 mx-2 rounded-2xl  hover:outline-1  hover:shadow-xl duration-500 dark:shadow-orange-500 shadow-white">About</a>
+                    </li>
+                    <li><a href="#Skill"
+                            class="p-2 px-6 mx-2  rounded-2xl  hover:outline-1 hover:shadow-xl duration-500 dark:shadow-orange-500 shadow-white">Skill</a>
+                    </li>
+                    <li><a href="#Project"
+                            class="p-2 px-6 mx-2 rounded-2xl  hover:outline-1 hover:shadow-xl duration-500 dark:shadow-orange-500 shadow-white">Project</a>
+                    </li>
+                    <li><a href="#Contact"
+                            class="p-2 px-6 mx-2  rounded-2xl  hover:outline-1 hover:shadow-xl duration-500 dark:shadow-orange-500 shadow-white">Contact</a>
+                    </li>
                 </div>
 
                 <!-- bar button -->
@@ -50,6 +59,7 @@
 
 
         <ul id="mobile-menu" class="hidden lg:hidden  flex-col space-y-4 p-5 bg-stone-400 dark:bg-gray-800 ">
+
             <li>
                 <a href="./assets/resume/Nikhil.pdf"
                     class="flex  p-2 rounded hover:bg-stone-300 dark:hover:bg-gray-700 text-blue-800">
@@ -57,10 +67,15 @@
                     <img src="./assets/images/download.png" class="size-6" alt="" srcset="">
                 </a>
             </li>
-            <li><a href="#About" class="block p-2 rounded ">About</a></li>
-            <li><a href="#Skill" class="block p-2 rounded ">Skill</a></li>
-            <li><a href="#Project" class="block p-2 rounded ">Project</a></li>
-            <li><a href="#Contact" class="block p-2 rounded ">Contact</a></li>
+
+            <li><a href="#About"
+                    class=" p-2 my-5 rounded active:shadow-xl dark:shadow-orange-500 shadow-white ">About</a></li>
+            <li><a href="#Skill"
+                    class=" p-2 my-5 rounded active:shadow-xl dark:shadow-orange-500 shadow-white ">Skill</a></li>
+            <li><a href="#Project"
+                    class="p-2 my-5 rounded active:shadow-xl dark:shadow-orange-500 shadow-white ">Project</a></li>
+            <li><a href="#Contact"
+                    class="p-2 my-5 rounded active:shadow-xl dark:shadow-orange-500 shadow-white ">Contact</a></li>
         </ul>
 
 
@@ -69,12 +84,16 @@
 
             <div class="lg:flex sm:flex lg:flex-row sm:flex-col mb-35  gap-10 items-center  justify-center  ">
                 <!-- Image -->
-                <div class="hover:shadow-2xl dark:shadow-orange-400 shadow-white lg:mt-38 mt-20">
+                <div class="
+                 active:shadow-xl active:scale-110
+                 hover:shadow-2xl duration-500
+                  dark:shadow-orange-400 shadow-blue-500
+                   lg:mt-38 mt-20">
                     <img class="lg:size-90 rounded-bl-fullxl md:size-80 sm:size-60 " src="./assets/images/nikhil.png"
                         alt="" srcset="">
                 </div>
                 <!-- Info -->
-                <div class="lg:mt-38 mt-15">
+                <div class="lg:mt-38 mt-15 ">
                     <a class="text-4xl">
                         Hello I'am Nikhil Keshvala
                     </a>
@@ -84,7 +103,6 @@
                         I’m a passionate Frontend & Mobile App Developer with experience in building responsive
                         websites
                     <p>
-
                         Using HTML, CSS, JavaScript, and Tailwind CSS, and cross-platform apps with React
                         Native.
                     </p>
@@ -98,7 +116,12 @@
         <!-- About -->
         <div id="About" class="py-16 px-6 bg-stone-200 dark:bg-gray-700 dark:text-white">
             <div class="flex justify-center">
-                <div class="hover:shadow-xl dark:shadow-orange-500 shadow-orange-50 bg-stone-500 dark:bg-gray-600  p-2 px-6 text-white rounded-2xl mb-10">
+                <div class="
+                  active:shadow-xl active:scale-110
+                    hover:shadow-xl hover:scale-110 lg:duration-800
+                     dark:shadow-orange-500 shadow-blue-500
+                      bg-stone-500 dark:bg-gray-600  
+                      p-2 px-6 text-white rounded-2xl mb-10">
                     About
                 </div>
             </div>
@@ -108,7 +131,7 @@
                 <div class=" mb-20 lg:mb-0">
                     <h2 class="text-4xl font-bold mb-6">Who Am I ?</h2>
                     <p class="text-lg leading-relaxed">
-                        I'm <a class="text-purple-600">Nikhil Keshvala</a>,
+                        I'm <a class="text-yellow-500">Nikhil Keshvala</a>,
                         Currently Doing an
                         <a class="font-semibold">
                             Internship
@@ -176,54 +199,79 @@
             </div>
         </div>
 
-
         <!-- Skill -->
         <div id="Skill" class="px-20 py-10 bg-stone-300 dark:bg-zinc-800 dark:text-white  ">
 
             <div class="flex justify-center">
-                <div class="hover:shadow-xl dark:shadow-orange-500 shadow-orange-50 bg-stone-500 dark:bg-gray-600  p-2 px-6 text-white rounded-2xl mb-10">Skill</div>
+                <div class="
+                 active:shadow-xl active:scale-110
+                hover:shadow-xl hover:scale-110
+                lg:duration-800
+              dark:shadow-orange-500 shadow-blue-500
+              bg-stone-500 dark:bg-gray-600 
+                p-2 px-6
+             text-white rounded-2xl mb-10">Skill</div>
             </div>
 
             <div>
                 <div
                     class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-x-40 gap-y-10 place-items-center">
-                    <div class="w-35 hover:scale-125 duration-1000 ">
+                   
+                    <div class="w-35 
+                     active:shadow-xl active:scale-110
+                    hover:shadow-lg
+                     dark:shadow-orange-500 shadow-blue-500 
+                     hover:scale-125 lg:duration-1000 ">
                         <a href="https://html.com/">
                             <img src="./assets/images/html.png" alt="" srcset="">
                         </a>
                         <a class="flex justify-center">HTML</a>
                     </div>
 
-                    <div class="w-30  hover:scale-125 duration-1000">
+                    <div class="w-30 
+                     active:shadow-xl active:scale-110
+                    hover:shadow-lg dark:shadow-orange-500 shadow-blue-500
+                     hover:scale-125 lg:duration-1000">
                         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
                             <img src="./assets/images/JS.png" alt="" srcset="">
                         </a>
                         <a class="flex justify-center">JavaScript</a>
                     </div>
 
-                    <div class="w-40 hover:scale-125 duration-1000">
+                    <div class="w-40 
+                     active:shadow-xl active:scale-110
+                     hover:shadow-lg dark:shadow-orange-500 shadow-blue-500
+                      hover:scale-125 lg:duration-1000">
                         <a href="https://reactnative.dev/docs/getting-started">
                             <img src="./assets/images/reactnative.png" alt="" srcset="">
                         </a>
                         <a class="flex justify-center">React Native</a>
                     </div>
 
-                    <div class="w-35 mb- hover:scale-125 duration-1000 ">
+                    <div class="w-35 
+                     active:shadow-xl active:scale-110
+                    hover:shadow-lg dark:shadow-orange-500 shadow-blue-500
+                     hover:scale-125 lg:duration-1000 ">
                         <a href="https://git-scm.com/">
                             <img src="./assets/images/git.png" alt="" srcset="">
                         </a>
                         <a class="flex justify-center">Git</a>
                     </div>
 
-                    <div class="w-35 mb- hover:scale-125 duration-1000 ">
+                    <div class="w-35 
+                     active:shadow-xl active:scale-110
+                     hover:shadow-lg dark:shadow-orange-500 shadow-blue-500
+                      hover:scale-125 lg:duration-1000 ">
                         <a href="https://tailwindcss.com/docs/installation/using-vite">
                             <img src="./assets/images/tailwind.png" alt="" srcset="">
                         </a>
                         <a class="flex justify-center">Tailwind</a>
                     </div>
 
-
-                    <div class="w-30  hover:scale-125 duration-1000">
+                    <div class="w-30
+                     active:shadow-xl active:scale-110
+                      hover:shadow-lg dark:shadow-orange-500 shadow-blue-500
+                       hover:scale-125 lg:duration-1000">
                         <a href="https://firebase.google.com/docs?gclsrc=aw.ds&gad_source=1&gad_campaignid=20100026058&
                         gbraid=0AAAAADpUDOhpEDlqrYGt0R0pF7wl_M79p&gclid=Cj0KCQjw5JXFBhCrARIsAL1ckPtf0V2iMbzYs0ShAUE59tjgL8
                         _1797tmhXkbQ0BdgaNCf0FAn4PteAaAi2GEALw_wcB">
@@ -237,39 +285,52 @@
 
         <!-- Project -->
         <div id="Project" class="px-5  py-10 bg-stone-200 dark:bg-gray-700  dark:text-white">
-
             <div class="flex justify-center">
-                <div class="hover:shadow-xl dark:shadow-orange-500 shadow-orange-50 bg-stone-500 dark:bg-gray-600  p-2 px-6 text-white rounded-2xl mb-10">Project</div>
+                <div
+                    class="
+                     active:shadow-xl active:scale-110
+                    hover:shadow-xl hover:scale-110
+                    lg:duration-800
+                     dark:shadow-orange-500 shadow-blue-500 bg-stone-500 dark:bg-gray-600 
+                      p-2 px-6 text-white rounded-2xl mb-10">
+                    Project</div>
             </div>
 
             <div class="grid  lg:p-10 sm:grid-cols-1 md:grid-cols-2  gap-x-10 gap-y-10 items-center">
-                <div class="bg-stone-500  dark:bg-gray-600 text-white rounded-2xl">
-                    <div class="grid gap-y-3 pb-3 grid-cols-2 rounded-2xl bg-white">
+               
+                <div class="
+                 active:shadow-xl active:scale-110 
+                 hover:scale-105 lg:duration-700 md:duration-700
+                  hover:shadow-2xl dark:shadow-orange-500 shadow-blue-500  bg-stone-500 
+                   dark:bg-gray-600 text-white rounded-2xl">
+                
+                    <div class=" grid gap-y-3 pb-3 grid-cols-2 rounded-2xl bg-white">
                         <img src="./assets/project_image/taskif/Untitled design3.png" class="rounded-tl-2xl" alt="">
                         <img src="./assets/project_image/taskif/Untitled design4.png" class="rounded-tr-2xl" alt="">
                         <img src="./assets/project_image/taskif/Untitled design5.png" class="" alt="">
-                        <img src="./assets/project_image/taskif/Untitled design.png" class="" alt="">
+                        <img src="./assets/project_image/taskif/Untitled design.png"  class="" alt="">
                     </div>
 
                     <div class="p-6 ">
                         <div class="flex justify-center text-2xl font-bold">
                             <h3 class="  p-2 px-6  rounded-2xl text-green-400 ">Taskify</h3>
                         </div>
-
                         <p class="mt-3 text-white">A simple to-do app built with React Native & Firebase Realtime
                             Database.</p>
-
                         <div class="flex mt-3 justify-around font-bold">
                             <h3 class="bg-stone-800 dark:bg-gray-900  p-2 px-6  rounded-2xl text-blue-400 ">React Native
                             </h3>
                             <h3 class="bg-stone-800 dark:bg-gray-900  p-2 px-6  rounded-2xl text-yellow-400 ">Firebase
                             </h3>
                         </div>
-
                     </div>
                 </div>
 
-                <div class=" bg-stone-500  dark:bg-gray-600 text-white rounded-2xl">
+                <div class="
+                 active:shadow-xl active:scale-110 
+                 hover:scale-105 lg:duration-700 md:duration-700
+                  hover:shadow-2xl 
+                 dark:shadow-orange-500 shadow-blue-500 bg-stone-500  dark:bg-gray-600 text-white rounded-2xl">
                     <div class="grid gap-y-3 pb-3 grid-cols-2 rounded-2xl bg-white">
                         <img src="./assets/project_image/accountapp/Untitled design (1).png" class="rounded-tl-2xl"
                             alt="">
@@ -280,7 +341,8 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-center text-2xl font-bold">
-                            <h3 class="  p-2 px-6  rounded-2xl text-green-400 ">Account App</h3>
+                            <h3 class="  p-2 px-6 hover:scale-110 duration-800  rounded-2xl text-green-400 ">Account App
+                            </h3>
                         </div>
 
                         <p class="mt-3 text-white">A simple Account App app built with React Native And Local Storeg.
@@ -295,14 +357,18 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <!-- Contact -->
         <div id="Contact" class="px-5 py-10 bg-stone-300 dark:bg-zinc-800 dark:text-white">
             <div class="flex justify-center">
-                <div class="hover:shadow-xl dark:shadow-orange-500 shadow-orange-50 bg-stone-500 dark:bg-gray-600  p-2 px-6 text-white rounded-2xl mb-10">Contact</div>
+                <div
+                    class="
+                    active:shadow-xl active:scale-110  md:duration-700
+                    hover:shadow-xl hover:scale-110 lg:duration-800 dark:shadow-orange-500
+                     shadow-blue-500 bg-stone-500 dark:bg-gray-600  p-2 px-6
+                      text-white rounded-2xl mb-10">
+                    Contact</div>
             </div>
 
             <!-- My info -->
@@ -313,7 +379,7 @@
                     </p>
                     <br>
                     <p class="flex items-center gap-3 lg:text-4xl lg:pb-2 lg:pt-5 md:text-3xl sm:text-2xl"><img
-                            src="/assets/images/email.png" class="h-12 pt-3 hover:animate-ping">Email:</p>
+                            src="/assets/images/email.png" class="h-12 pt-3 active:animate-ping hover:animate-bounce">Email:</p>
                     <a href="mailto:nikhilkeshvala1@gmail.com"
                         class=" pl-12 lg:text-4xl md:text-3xl sm:text-2xl text-blue-500">
                         nikhilkeshvala1@gmail.com
@@ -321,10 +387,10 @@
                     <br>
                     <br>
                     <p class="flex items-center pt-3 gap-3 lg:text-4xl lg:pb-2 lg:pt-5 md:text-3xl sm:text-2xl"><img
-                            src="/assets/images/telephone.png" class="h-10 hover:animate-bounce" alt="" srcset=""> 
-                            Phone:</p>
-                   
-                            <p class=" pl-12 lg:text-4xl md:text-3xl sm:text-2xl text-blue-500">
+                            src="/assets/images/telephone.png" class="h-10 active:animate-ping hover:animate-bounce" alt="" srcset="">
+                        Phone:</p>
+
+                    <p class=" pl-12 lg:text-4xl md:text-3xl sm:text-2xl text-blue-500">
                         +91 9727064969
                     </p>
                 </div>
@@ -335,26 +401,30 @@
 
             <div class="flex flex-wrap justify-center gap-6 lg:gap-40 md:gap-20 pt-10">
 
-                <a href="https://www.linkedin.com/in/nikhil-keshvala-985786327/" class="hover:scale-150 duration-500">
-                    <img src="assets/Platfrom/LinkedIn_icon.png" class="hover:shadow-lg dark:shadow-orange-500 shadow-orange-50 size-10 rounded-3xl" srcset="">
+                <a href="https://www.linkedin.com/in/nikhil-keshvala-985786327/">
+                    <img src="assets/Platfrom/LinkedIn_icon.png"
+                        class="active:scale-140 active:shadow-lg hover:scale-150 lg:duration-500 hover:shadow-lg dark:shadow-orange-500 md:duration-700  shadow-blue-500 size-10 rounded-3xl"
+                        srcset="">
                 </a>
 
                 <a href="https://github.com/NK-infinite?tab=overview&from=2025-08-01&to=2025-08-21">
                     <img src="assets/Platfrom/Octicons-mark-github.svg.png"
-                        class="hover:shadow-lg dark:shadow-orange-500 shadow-orange-50 hover:scale-150 duration-500 bg-blue-600 rounded-4xl size-10" alt="" srcset="">
+                        class="active:scale-140 active:shadow-lg hover:shadow-lg dark:shadow-orange-500 shadow-blue-500 hover:scale-150 md:duration-700 lg:duration-500 bg-yellow-600 rounded-4xl size-10"
+                        alt="" srcset="">
                 </a>
 
                 <a href="https://www.fiverr.com/users/nikhil_keshvala/manage_gigs">
-                    <img src="/assets/Platfrom/fiverr.png" class="hover:shadow-lg dark:shadow-orange-500 shadow-orange-50 w-12 hover:scale-150 duration-500 rounded-4xl" alt=""
-                        srcset="">
+                    <img src="/assets/Platfrom/fiverr.png"
+                        class="active:scale-140 active:shadow-lg hover:shadow-lg dark:shadow-orange-500 shadow-blue-500 w-12 hover:scale-150 md:duration-700  lg:duration-500 rounded-4xl"
+                        alt="" srcset="">
                 </a>
 
                 <a href="https://www.upwork.com/freelancers/~0168f5e4a783f999cb">
-                    <img src="/assets/Platfrom/upwork.png" class="hover:shadow-lg dark:shadow-orange-500 shadow-orange-50 w-12 hover:scale-150 duration-500 rounded-4xl" alt=""
-                        srcset="">
+                    <img src="/assets/Platfrom/upwork.png"
+                        class="active:scale-140 active:shadow-lg hover:shadow-lg dark:shadow-orange-500 shadow-blue-500 w-12 hover:scale-150 md:duration-700 lg:duration-500 rounded-4xl"
+                        alt="" srcset="">
                 </a>
             </div>
-
         </div>
     </div>
 
