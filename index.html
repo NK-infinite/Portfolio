@@ -19,6 +19,26 @@
             mobileMenu.classList.toggle("hidden");
         });
     });
+   const mainURL = "https://dev-store-by-nikhil.netlify.app/";
+   const backupURL = "https://dev-world-by-nikhil.pages.dev/";
+
+  async function checkMainSite() {
+    try {
+      const response = await fetch(mainURL, { method: "GET", mode: "cors" });
+      // If Netlify responds with 200 OK, it’s alive.
+      if (!response.ok) throw new Error("Main site not reachable");
+
+      console.log("Main site up — using main:", mainURL);
+    } catch (err) {
+      // If main site fails (network, 404, etc.), switch to backup.
+      console.warn("Main site down — using backup:", backupURL);
+      document.getElementById("dev-store-link").href = backupURL;
+      document.getElementById("dev-store-link").classList.add("text-orange-400");
+    }
+  }
+
+  // Run check after DOM loads
+  document.addEventListener("DOMContentLoaded", checkMainSite);
 </script>
   
 
@@ -123,7 +143,9 @@
 
                     </div>
               <div class="mt-12 " >
-                    <a href="https://dev-store-by-nikhil.netlify.app/" target="_blank" 
+                    <a
+                    id="dev-store-link"
+                     href="https://dev-store-by-nikhil.netlify.app/" target="_blank"
     class="inline-flex items-center px-8 py-4 font-bold rounded-xl
            transition-all duration-300 transform hover:-translate-y-1
             hover:text-orange-500 hover:shadow-2xl hover:dark:shadow-orange-400
