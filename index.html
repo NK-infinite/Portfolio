@@ -6,23 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="FiEmDNs1aOJJwR_HNoRwXIpT-IUGpLbD4kpok18aZb0" />
 
-     <meta name="description" content="Nikhil Keshvala is a React Native Developer from India. Explore projects, skills, and contact details.">
+    <meta name="description"
+        content="Nikhil Keshvala is a React Native Developer from India. Explore projects, skills, and contact details.">
     <meta name="keywords" content="Nikhil Keshvala, React Native Developer, Portfolio, Mobile App Development, India">
-    
+
     <meta property="og:site_name" content="Nikhil Keshvala ">
     <meta property="og:title" content="Nikhil Keshvala - React Native Developer Portfolio" />
-    <meta property="og:description" content="Explore the projects, skills, and work of Nikhil Keshvala, React Native Developer from India." />
+    <meta property="og:description"
+        content="Explore the projects, skills, and work of Nikhil Keshvala, React Native Developer from India." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://portfolio-xi-ten-dat6htivsj.vercel.app/" />
     <meta property="og:image" content="https://portfolio-xi-ten-dat6htivsj.vercel.app/assets/images/NK.png" />
 
 
     <title>Nikhil Keshvala</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KGZQMJ0LN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8KGZQMJ0LN');
+    </script>
+
+
+    <!-- Google Analytics Tracking Code END -->
+
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="assets/images/NK.png" class="h-200" />
+
 </head>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -32,28 +49,28 @@
             mobileMenu.classList.toggle("hidden");
         });
     });
-   const mainURL = "https://dev-store-by-nikhil.netlify.app/";
-   const backupURL = "https://dev-world-by-nikhil.pages.dev/";
+    const mainURL = "https://dev-store-by-nikhil.netlify.app/";
+    const backupURL = "https://dev-world-by-nikhil.pages.dev/";
 
-  async function checkMainSite() {
-    try {
-      const response = await fetch(mainURL, { method: "GET", mode: "cors" });
-      // If Netlify responds with 200 OK, it’s alive.
-      if (!response.ok) throw new Error("Main site not reachable");
+    async function checkMainSite() {
+        try {
+            const response = await fetch(mainURL, { method: "GET", mode: "cors" });
+            // If Netlify responds with 200 OK, it’s alive.
+            if (!response.ok) throw new Error("Main site not reachable");
 
-      console.log("Main site up — using main:", mainURL);
-    } catch (err) {
-      // If main site fails (network, 404, etc.), switch to backup.
-      console.warn("Main site down — using backup:", backupURL);
-      document.getElementById("dev-store-link").href = backupURL;
-      document.getElementById("dev-store-link").classList.add("text-orange-400");
+            console.log("Main site up — using main:", mainURL);
+        } catch (err) {
+            // If main site fails (network, 404, etc.), switch to backup.
+            console.warn("Main site down — using backup:", backupURL);
+            document.getElementById("dev-store-link").href = backupURL;
+            document.getElementById("dev-store-link").classList.add("text-orange-400");
+        }
     }
-  }
 
-  // Run check after DOM loads
-  document.addEventListener("DOMContentLoaded", checkMainSite);
+    // Run check after DOM loads
+    document.addEventListener("DOMContentLoaded", checkMainSite);
 </script>
-  
+
 
 <body class="select-none bg-stone-300 dark:bg-zinc-800 dark:text-white">
     <div class="group ">
@@ -79,7 +96,7 @@
                     <li><a href="#Project"
                             class="p-2 px-6 mx-2 rounded-2xl text-white hover:text-orange-500 hover:outline-1 hover:shadow-xl duration-500 dark:shadow-orange-500 shadow-blue-500 ">Project</a>
                     </li>
-                   
+
                     <li><a href="#Contact"
                             class="p-2 px-6 mx-2  rounded-2xl text-white hover:text-orange-500 hover:outline-1 hover:shadow-xl duration-500 dark:shadow-orange-500 shadow-blue-500 ">Contact</a>
                     </li>
@@ -155,22 +172,19 @@
                         </p>
 
                     </div>
-              <div class="mt-12 " >
-                    <a
-                    id="dev-store-link"
-                     href="https://dev-store-by-nikhil.netlify.app/" target="_blank"
-    class="inline-flex items-center px-8 py-4 font-bold rounded-xl
+                    <div class="mt-12 ">
+                        <a id="dev-store-link" href="https://dev-store-by-nikhil.netlify.app/" target="_blank" class="inline-flex items-center px-8 py-4 font-bold rounded-xl
            transition-all duration-300 transform hover:-translate-y-1
             hover:text-orange-500 hover:shadow-2xl hover:dark:shadow-orange-400
              shadow-blue-500 text-lg">
-      <div>  
-          <i class="fa-solid fa-user mr-3  transition-transform"></i>
-          Visit My Dev Store 
-          <i class="fa-solid fa-arrow-up-right-from-square ml-3   transition-transform"></i>
-        </div>
-                    </a>
-                    
-                </div>
+                            <div>
+                                <i class="fa-solid fa-user mr-3  transition-transform"></i>
+                                Visit My Dev Store
+                                <i class="fa-solid fa-arrow-up-right-from-square ml-3   transition-transform"></i>
+                            </div>
+                        </a>
+
+                    </div>
                     <div class="flex mt-10 font-bold">
 
                         <div class="mt-2 mr-3 size-3 rounded-4xl bg-blue-500  dark:bg-orange-500">
