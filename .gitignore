@@ -3,7 +3,6 @@ node_modules/
 
 # Production build artifacts
 dist-ssr/
-
 # Local env files
 .env
 .env.*
